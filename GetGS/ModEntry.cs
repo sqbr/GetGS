@@ -222,11 +222,11 @@ namespace GetGS
                 };
 
                 var neutral_exceptions_dict = new Dictionary<string, string> {
-                    { "VincentGuy","kid" },{"EvelynGrandparent","Grandie "+ variable_dict["EvelynName"] }, {"GeorgeGrandparent", "Grandie "+ variable_dict["GeorgeName"] } };
+                    { "VincentGuy","kid" },{"EvelynGrandparent","Grandie "+ variable_dict["Evelyn Name"] }, {"GeorgeGrandparent", "Grandie "+ variable_dict["George Name"] } };
 
                 foreach (string name in new string[] { "Pierre", "Caroline", "Kent", "Jodi", "Robin", "Demetrius", "Evelyn" })
                 {
-                neutral_exceptions_dict[name + "ParentName"] = "parent " + variable_dict[name + "Name"];
+                neutral_exceptions_dict[name + "ParentName"] = "parent " + variable_dict[name + " Name"];
                 }
 
                 var gender_exceptions = new Dictionary<string, Dictionary<string, string>>{
@@ -236,7 +236,7 @@ namespace GetGS
                 string[] name_list = new string[] { "Abigail", "Alex", "Birdie", "Bouncer", "Caroline", "Charlie", "Clint", "Demetrius", "Dwarf", "Elliott", "Emily", "Evelyn", "Farmer", "George", "Gil", "Governor", "Grandpa", "Gunther", "Gus", "Haley", "Harvey", "Henchman", "Jas", "Jodi", "Kent", "Krobus", "Leah", "Leo", "Lewis", "Linus", "Marcello", "Marlon", "Marnie", "Maru", "MisterQi", "Morris", "OldMariner", "Pam", "Penny", "Pierre", "ProfessorSnail", "Robin", "Sam", "Sandy", "Sebastian", "Shane", "Vincent", "Willy", "Wizard" };
 
                 foreach (string name in name_list) {
-                    var g = variable_dict[name+"Gender"]; //gender of this character as in config.json
+                    var g = variable_dict[name+" Gender"]; //gender of this character as in config.json
                     var g_dict = gender_words[g];
                     foreach (KeyValuePair<string, string> kvp in g_dict)
                     {
@@ -250,7 +250,7 @@ namespace GetGS
 
                         api.RegisterToken(this.ModManifest, word, () => new[] { variable }); //registers tokens like AbigailSpouseU
                     }
-                    var p = variable_dict[name + "Pronoun"]; //pronouns of this character as in config.json
+                    var p = variable_dict[name + " Pronoun"]; //pronouns of this character as in config.json
                     g_dict = pronoun_words[p];
                     foreach (KeyValuePair<string, string> kvp in g_dict)
                     {
@@ -261,7 +261,7 @@ namespace GetGS
                 }
                     if (name != "Farmer")
                 {
-                    if ((variable_dict["PossessiveS"] == "false") && (name[name.Length - 1] == 's'))
+                    if ((variable_dict["Possessive S"] == "false") && (name[name.Length - 1] == 's'))
                         api.RegisterToken(this.ModManifest, name + "Possession", () => new[] { "'" });
                     else
                         api.RegisterToken(this.ModManifest, name + "Possession", () => new[] { "'s" });

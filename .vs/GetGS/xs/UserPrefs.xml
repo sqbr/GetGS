@@ -1,18 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GetGS/manifest.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GetGS/ModEntry.cs">
     <Files>
       <File FileName="GetGS/manifest.json" Line="7" Column="27" />
-      <File FileName="GetGS/ModEntry.cs" Line="17" Column="3" />
+      <File FileName="GetGS/ModEntry.cs" Line="38" Column="170" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="GetGS" expanded="True">
-            <Node name="GetGS" expanded="True">
-              <Node name="ModEntry.cs" selected="True" />
-            </Node>
+          <Node name="GetGS" expanded="True" selected="True">
+            <Node name="GetGS" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -21,8 +17,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
 </Properties>
