@@ -237,6 +237,8 @@ namespace GetGS
 
                 foreach (string name in name_list) {
                     var g = variable_dict[name+"Gender"]; //gender of this character as in config.json
+                    if (g == "false") { g = "Neutral"; }
+                        
                     var g_dict = gender_words[g];
                     foreach (KeyValuePair<string, string> kvp in g_dict)
                     {

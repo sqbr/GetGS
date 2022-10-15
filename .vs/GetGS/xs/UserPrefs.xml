@@ -1,10 +1,8 @@
 ﻿<Properties>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench ActiveDocument="GetGS/ModEntry.cs">
     <Files>
       <File FileName="GetGS/manifest.json" Line="7" Column="27" />
-      <File FileName="GetGS/ModEntry.cs" Line="245" Column="59" />
+      <File FileName="GetGS/ModEntry.cs" Line="264" Column="59" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -25,4 +23,6 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
